@@ -2,7 +2,7 @@
 using xadrez_console;
 using xadrez;
 
-Tabuleiro tab = new Tabuleiro(8, 8);
+/*Tabuleiro tab = new Tabuleiro(8, 8);
 
 
 try
@@ -19,6 +19,14 @@ catch (TabuleiroException e)
 }
 
 
+*/
 
+
+PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+
+
+Console.WriteLine(pos);
+
+Console.WriteLine(pos.toPosicao());
     Console.ReadLine();
 
