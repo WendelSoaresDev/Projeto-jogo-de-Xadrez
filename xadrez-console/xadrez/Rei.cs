@@ -8,6 +8,10 @@ namespace xadrez
         {
 
         }
+        public Rei(Tabuleiro tab, Cor cor, Posicao pos) : base(tab, cor)
+        {
+            
+        }
 
         public override string ToString()
         {
