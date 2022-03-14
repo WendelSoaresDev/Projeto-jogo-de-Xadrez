@@ -4,22 +4,30 @@ namespace tabuleiro
     class Posicao
     {
         //auto properties
-        public int linha { get; set; }
-        public int coluna { get; set; }
+        public int Linha { get; set; }
+        public int Coluna { get; set; }
 
         //construtor
         public Posicao(int linha, int coluna)
         {
-            this.linha = linha;  //this = autorreferência
-            this.coluna = coluna;   
+            Linha = linha;  //this = autorreferência
+            Coluna = coluna;   
         }
         
+        public void definirValores(int linha, int coluna)
+        {
+            Linha = linha;
+            Coluna = coluna;
+        }
+
         //Sobreposição
         public override string ToString()
         {
-            return linha
+            return Linha
                 + ", "
-                + coluna;
+                + Coluna;
         }
+
+
     }
 }
