@@ -31,44 +31,52 @@ namespace xadrez
             pos.definirValores(Posicao.Linha - 1, Posicao.Coluna - 2);
             if (Tab.posicaoValida(pos) && podeMover(pos))
             {
-                mat[pos.Linha, Posicao.Coluna] = true;
+                mat[pos.Linha, pos.Coluna] = true;
             }
-
-            pos.definirValores(Posicao.Linha - 2, Posicao.Coluna - 1);
-            if (Tab.posicaoValida(pos) && podeMover(pos))
-            {
-                mat[pos.Linha, Posicao.Coluna] = true;
-            }
-
-            pos.definirValores(Posicao.Linha - 2, Posicao.Coluna + 1);
-            if (Tab.posicaoValida(pos) && podeMover(pos))
-            {
-                mat[pos.Linha, Posicao.Coluna] = true;
-            }
-
             pos.definirValores(Posicao.Linha - 1, Posicao.Coluna + 2);
             if (Tab.posicaoValida(pos) && podeMover(pos))
             {
-                mat[pos.Linha, Posicao.Coluna] = true;
+                mat[pos.Linha, pos.Coluna] = true;
             }
+
 
             pos.definirValores(Posicao.Linha + 1, Posicao.Coluna + 2);
             if (Tab.posicaoValida(pos) && podeMover(pos))
             {
-                mat[pos.Linha, Posicao.Coluna] = true;
-            }
-
-            pos.definirValores(Posicao.Linha + 2, Posicao.Coluna - 1);
-            if (Tab.posicaoValida(pos) && podeMover(pos))
-            {
-                mat[pos.Linha, Posicao.Coluna] = true;
+                mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(Posicao.Linha + 1, Posicao.Coluna - 2);
             if (Tab.posicaoValida(pos) && podeMover(pos))
             {
-                mat[pos.Linha, Posicao.Coluna] = true;
+                mat[pos.Linha, pos.Coluna] = true;
             }
+
+            pos.definirValores(Posicao.Linha - 2, Posicao.Coluna - 1);
+            if (Tab.posicaoValida(pos) && podeMover(pos))
+            {
+                mat[pos.Linha, pos.Coluna] = true;
+            }
+
+            pos.definirValores(Posicao.Linha - 2, Posicao.Coluna + 1);
+            if (Tab.posicaoValida(pos) && podeMover(pos))
+            {
+                mat[pos.Linha, pos.Coluna] = true;
+            }
+
+
+            pos.definirValores(Posicao.Linha + 2, Posicao.Coluna + 1);
+            if (Tab.posicaoValida(pos) && podeMover(pos))
+            {
+                mat[pos.Linha, pos.Coluna] = true;
+            }
+
+            pos.definirValores(Posicao.Linha + 2, Posicao.Coluna - 1);
+            if (Tab.posicaoValida(pos) && podeMover(pos))
+            {
+                mat[pos.Linha, pos.Coluna] = true;
+            }
+
 
             return mat;
 
